@@ -19,7 +19,7 @@
         margin: 0 auto;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 145px 1fr 145px;
+        grid-template-columns: 11%px 1fr 11%;
         grid-template-rows: 230px 1fr 212px;
         justify-content: center;
         justify-items: center;
@@ -56,25 +56,29 @@
         font-style: normal;
         line-height: 22px;
         background-color: #f1cdb3;
+        text-decoration: none;
+        color: #292929;
         gap: 10px;
         border: none;
       }
-      .but {
-        max-width: 14px;
-        max-height: 6px;
-        color: #292929;
-        border: 1px solid black;
+      .button:hover {
+      background-color: #FDDCC4;
+      border: 5px solid #FDDCC4;
       }
-      .circle {
-        width: 52px;
-        height: 52px;
+      .but {
+        padding: 26px;
         border-radius: 180%;
+        text-decoration: none;
         color: #f1cdb3;
         border: 2px solid #f1cdb3;
       }
+      .but:hover {
+      background-color: #FAFAFA;
+      border: 3px solid #FDDCC4;
+      }
       .scrolsection {
-        width: 990px;
-        height: 435px;
+        min-width: 990px;
+        max-height: 435px;
         grid-area: 2/2/3/3;
         box-sizing: border-box;
         display: grid;
@@ -82,8 +86,9 @@
       }
       .metrica {
         min-width: 270px;
-        max-height: 435px;
-        margin: 0 auto;
+        height: 435px;
+        margin-left: 7% ;
+        margin-right: 7% ;
         box-sizing: border-box;
         text-align: center;
         background-color: #FAFAFA;
@@ -100,6 +105,7 @@
         border: 2px solid #F1CDB3;
         background-color: #FAFAFA;
       }
+      
     </style>
   </head>
   <body>
@@ -112,18 +118,17 @@
         </div>
         <div class="clicleft">
           <div class="circle">
-            <button class="but left">1</button>
+            <a class="but left" href="#" target="_blank"></a>
           </div>
         </div>
-        <div class="clicright">
+          <div class="clicright">
           <div class="circle">
-            <button class="but right">2</button>
-        </div>
+            <a class="but right" href="#" target="_blank"></a>
+          </div>
         </div>
         <div class="clicbottom">
           <div>
-            <button class="button">Get to know the rest</button>
-          </div>
+            <a class="button" href="#" target="_blank">Get to know the rest</a>          </div>
         </div>        
       <div class="scrolsection">
             <section class="metrica katrine">
@@ -131,7 +136,7 @@
                 <img src="./assets/katrine.png" alt="katrine" />
                 <h2>Katrine</h2>
                 <div class="clic">
-                  <button class="met">Learn more</button>
+                  <a class="button met" href="#" target="_blank">Learn more</a>
                 </div>
               </div>
             </section>
@@ -140,7 +145,7 @@
                 <img src="./assets/jennifer.png" alt="jennifer" />
                 <h2>Jennifer</h2>
                 <div class="clic">
-                  <button class="met">Learn more</button>
+                  <a class="button met" href="#" target="_blank">Learn more</a>
                 </div>
               </div>
             </section>
@@ -149,11 +154,11 @@
                 <img src="./assets/woody.png" alt="woody" />
                 <h2>Woody</h2>
                 <div class="clic">
-                  <button class="met">Learn more</button>
+                  <a class="button met" href="#" target="_blank">Learn more</a>
                 </div>
               </div>
             </section>
       </div>
     </aside>
-  </body>
+      </body>
 </html>
