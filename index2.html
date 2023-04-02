@@ -6,58 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .clic-1 {
-        cursor: pointer;
-        position: relative;
-        width: 80px;
-        height: 50px;
-        margin: 20px;
-      }
-      .clic-1 div {
-        position: relative;
-        top: 20px;
-        width: 90px;
-        height: 10px;
-        background-color: #337ab7;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-        left: 0;
-        display: block;
-      }
-      .clic-1 div::after {
-        content: "";
-        position: absolute;
-        width: 40px;
-        height: 10px;
-        top: -11px;
-        right: -8px;
-        background-color: #337ab7;
-        transform: rotate(45deg);
-      }
-      .clic-1 div::before {
-        content: "";
-        position: absolute;
-        width: 40px;
-        height: 10px;
-        top: 11px;
-        right: -8px;
-        background-color: #337ab7;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, rgba(0, 0, 0, 0.2));
-        transform: rotate(-45deg);
-      }
-      .clic-1:hover {
-        animation: clic-1 1s linear infinite;
-      }
-      @keyframes clic-1 {
-        0% {
-          left: 0;
-        }
-        50% {
-          left: 10px;
-        }
-        100% {
-          left: 0;
-        }
-      }
       .but {
         padding: 26px;
         border-radius: 180%;
@@ -69,7 +17,6 @@
         background-color: #fafafa;
         border: 3px solid #fddcc4;
       }
-
       .lefts {
         border: 15px solid transparent;
         display: inline-flex;
@@ -82,25 +29,215 @@
         border-left: 15px solid gray;
         border-right: none;
       }
-
     </style>
   </head>
   <body>
-    <h1>Стрелка анимированная если прогодится</h1>
-    <div class="clic-1">
-      <div></div>
-    </div>
-    <h2>Круг с цифрой</h2>
-    <div class="circle">
-      <a class="but left" href="#" target="_blank">1</a>
-      <section>
-    </div>
-    <div class="arrow-left">
-      <div></div>
-    </div>
     <h3>стрелка треугольник</h3>
     <div class="lefts"></div>
     <div class="rights"></div>
-  </section>
+    <section class="scrolsection2">
+      <section class="metrica sophia">
+        <div class="img">
+          <img src="./assets/Sophia.png" alt="sophia" />
+          <h2>Sophia</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+            <div class="story" id="sophia">
+              <h2>Sophia</h2>
+              <p>Dog - Labrador</p>
+              <p>
+                Jennifer is a sweet 2 months old Labrador that is patiently
+                waiting to find a new forever home. This girl really enjoys
+                being able to go outside to run and play, but won't hesitate to
+                play up a storm in the house if she has all of her favorite
+                toys.
+              </p>
+              <ul>
+                <li>Age: 2 months</li>
+                <li>Inoculations: none</li>
+                <li>Diseases: none</li>
+                <li>Parasites: none</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="metrica timmy">
+        <div class="img">
+          <img src="./assets/timmy.png" alt="Timmy" />
+          <h2>Timmy</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="timmy">
+          <h2>Timmy</h2>
+          <p>Cat - British Shorthair</p>
+          <p>
+            Timmy is an adorable grey british shorthair male. He loves to play
+            and snuggle. He is neutered and up to date on age appropriate
+            vaccinations. He can be chatty and enjoys being held. Timmy has a
+            lot to say and wants a person to share his thoughts with.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+      <section class="metrica charly">
+        <div class="img">
+          <img src="./assets/charly.png" alt="Charly" />
+          <h2>Charly</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="charly">
+          <h2>Charly</h2>
+          <p>Dog - Jack Russell Terrier</p>
+          <p>
+            This cute boy, Charly, is three years old and he likes adults and
+            kids. He isn’t fond of many other dogs, so he might do best in a
+            single dog home. Charly has lots of energy, and loves to run and
+            play. We think a fenced yard would make him very happy.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+      <section class="metrica scarlett">
+        <div class="img">
+          <img src="./assets/scarlet.png" alt="Scarlett" />
+          <h2>Scarlett</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="scarlett">
+          <h2>Scarlett</h2>
+          <p>Dog - Jack Russell Terrier</p>
+          <p>
+            Scarlett is a happy, playful girl who will make you laugh and smile.
+            She forms a bond quickly and will make a loyal companion and a
+            wonderful family dog or a good companion for a single individual too
+            since she likes to hang out and be with her human.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+      <section class="metrica Freddie">
+        <div class="img">
+          <img src="./assets/Freddie.png" alt="Freddie" />
+          <h2>Freddie</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="freddie">
+          <h2>Freddie</h2>
+          <p>Cat - British Shorthair</p>
+          <p>
+            Freddie is a little shy at first, but very sweet when he warms up.
+            He likes playing with shoe strings and bottle caps. He is quick to
+            learn the rhythms of his human’s daily life. Freddie has bounced
+            around a lot in his life, and is looking to find his forever home.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+      <section class="metrica katrine">
+        <div class="img">
+          <img src="./assets/katrine.png" alt="katrine" />
+          <h2>Katrine</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="katrine">
+          <h2>Katrine</h2>
+          <p>Cat - British Shorthair</p>
+          <p>
+            Katrine is a beautiful girl. She is as soft as the finest velvet
+            with a thick lush fur. Will love you until the last breath she takes
+            as long as you are the one. She is picky about her affection. She
+            loves cuddles and to stretch into your hands for a deeper
+            relaxations.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+      <section class="metrica jennifer">
+        <div class="img">
+          <img src="./assets/jennifer.png" alt="jennifer" />
+          <h2>Jennifer</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="jennifer">
+          <h2>Jennifer</h2>
+          <p>Dog - Labrador</p>
+          <p>
+            Jennifer is a sweet 2 months old Labrador that is patiently waiting
+            to find a new forever home. This girl really enjoys being able to go
+            outside to run and play, but won't hesitate to play up a storm in
+            the house if she has all of her favorite toys.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+      <section class="metrica woody">
+        <div class="img">
+          <img src="./assets/woody.png" alt="woody" />
+          <h2>Woody</h2>
+          <div class="clic">
+            <a class="button met" href="#" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <div class="story" id="woody">
+          <h2>Woody</h2>
+          <p>Dog - Golden Retriever</p>
+          <p>
+            Woody is a handsome 3 1/2 year old boy. Woody does know basic
+            commands and is a smart pup. Since he is on the stronger side, he
+            will learn a lot from your training. Woody will be happier when he
+            finds a new family that can spend a lot of time with him.
+          </p>
+          <ul>
+            <li>Age: 2 months</li>
+            <li>Inoculations: none</li>
+            <li>Diseases: none</li>
+            <li>Parasites: none</li>
+          </ul>
+        </div>
+      </section>
+    </section>
   </body>
 </html>

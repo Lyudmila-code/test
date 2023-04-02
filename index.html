@@ -13,18 +13,17 @@
         border: 1px solid red;
       }
       .content {
-        background-color: #F6F6F6;
+        background-color: #f6f6f6;
         max-width: 1280px;
         min-height: 877px;
         margin: 0 auto;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 11%px 1fr 11%;
+        grid-template-columns: 11% 1fr 11%;
         grid-template-rows: 230px 1fr 212px;
         justify-content: center;
         justify-items: center;
         align-items: center;
-        
       }
       h1 {
         font-family: Georgia;
@@ -32,7 +31,7 @@
         font-weight: 400;
         font-size: 35px;
         line-height: 22px;
-        letter-spacing: 6%;
+        letter-spacing: 0.06em;
       }
       .heading {
         grid-area: 1/1/2/4;
@@ -47,7 +46,7 @@
         grid-area: 3/1/4/4;
       }
       .button {
-        width: 261;
+        width: 261px;
         height: 52px;
         padding: 15px 45px;
         border-radius: 100px;
@@ -62,8 +61,8 @@
         border: none;
       }
       .button:hover {
-      background-color: #FDDCC4;
-      border: 5px solid #FDDCC4;
+        background-color: #fddcc4;
+        border: 5px solid #fddcc4;
       }
       .but {
         padding: 26px;
@@ -73,8 +72,8 @@
         border: 2px solid #f1cdb3;
       }
       .but:hover {
-      background-color: #FAFAFA;
-      border: 3px solid #FDDCC4;
+        background-color: #fafafa;
+        border: 3px solid #fddcc4;
       }
       .scrolsection {
         min-width: 990px;
@@ -87,14 +86,14 @@
       .metrica {
         min-width: 270px;
         height: 435px;
-        margin-left: 7% ;
-        margin-right: 7% ;
+        margin-left: 7%;
+        margin-right: 7%;
         box-sizing: border-box;
         text-align: center;
-        background-color: #FAFAFA;
+        background-color: #fafafa;
       }
       .met {
-        width: 187;
+        width: 187px;
         height: 52px;
         padding: 15px 45px;
         border-radius: 100px;
@@ -102,63 +101,65 @@
         font-family: Georgia;
         font-style: normal;
         line-height: 22px;
-        border: 2px solid #F1CDB3;
-        background-color: #FAFAFA;
+        border: 2px solid #f1cdb3;
+        background-color: #fafafa;
       }
-      
     </style>
   </head>
   <body>
-    <aside class="container">
+    <section class="container">
       <div class="content">
         <div class="heading">
-          <h1>Our friends who
-            <br> looking for a house
+          <h1>
+            Our friends who <br />
+            looking for a house
           </h1>
         </div>
         <div class="clicleft">
           <div class="circle">
-            <a class="but left" href="#" target="_blank"></a>
+            <a class="but left" href="#"></a>
           </div>
         </div>
-          <div class="clicright">
+        <div class="clicright">
           <div class="circle">
-            <a class="but right" href="#" target="_blank"></a>
+            <a class="but right" href="#"></a>
           </div>
         </div>
         <div class="clicbottom">
           <div>
-            <a class="button" href="#" target="_blank">Get to know the rest</a>          </div>
-        </div>        
-      <div class="scrolsection">
-            <section class="metrica katrine">
-              <div class="img">
-                <img src="./assets/katrine.png" alt="katrine" />
-                <h2>Katrine</h2>
-                <div class="clic">
-                  <a class="button met" href="#" target="_blank">Learn more</a>
-                </div>
+            <a class="button" href="#" target="_blank">Get to know the rest</a>
+          </div>
+        </div>
+        <div class="scrolsection">
+          <section class="metrica katrine">
+            <div class="img">
+              <img src="./assets/katrine.png" alt="katrine" />
+              <h2>Katrine</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
               </div>
-            </section>
-            <section class="metrica jennifer">
-              <div class="img">
-                <img src="./assets/jennifer.png" alt="jennifer" />
-                <h2>Jennifer</h2>
-                <div class="clic">
-                  <a class="button met" href="#" target="_blank">Learn more</a>
-                </div>
+            </div>
+          </section>
+          <section class="metrica jennifer">
+            <div class="img">
+              <img src="./assets/jennifer.png" alt="jennifer" />
+              <h2>Jennifer</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
               </div>
-            </section>
-            <section class="metrica woody">
-              <div class="img">
-                <img src="./assets/woody.png" alt="woody" />
-                <h2>Woody</h2>
-                <div class="clic">
-                  <a class="button met" href="#" target="_blank">Learn more</a>
-                </div>
+            </div>
+          </section>
+          <section class="metrica woody">
+            <div class="img">
+              <img src="./assets/woody.png" alt="woody" />
+              <h2>Woody</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
               </div>
-            </section>
+            </div>
+          </section>
+        </div>
       </div>
-    </aside>
-      </body>
+    </section>
+  </body>
 </html>
