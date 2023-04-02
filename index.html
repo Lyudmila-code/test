@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid red;
+      }
+      .content {
+        background-color: #F6F6F6;
+        max-width: 1280px;
+        min-height: 877px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 2px solid fuchsia;
+        display: grid;
+        grid-template-columns: 145px 1fr 145px;
+        grid-template-rows: 230px 1fr 212px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+      }
+      h1 {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 22px;
+        letter-spacing: 6%;
+      }
+      .heading {
+        grid-area: 1/1/2/4;
+      }
+      .clicleft {
+        grid-area: 2/1/3/2;
+      }
+      .clicright {
+        grid-area: 2/3/3/4;
+      }
+      .clicbottom {
+        grid-area: 3/1/4/4;
+      }
+      .button {
+        width: 261;
+        height: 52px;
+        padding: 15px 45px;
+        border-radius: 100px;
+        font-size: 17px;
+        font-family: Georgia;
+        font-style: normal;
+        line-height: 22px;
+        background-color: #f1cdb3;
+        gap: 10px;
+        border: none;
+      }
+      .but {
+        max-width: 14px;
+        max-height: 6px;
+        color: #292929;
+        border: 1px solid black;
+      }
+      .circle {
+        width: 52px;
+        height: 52px;
+        border-radius: 180%;
+        color: #f1cdb3;
+        border: 2px solid #f1cdb3;
+      }
+      .scrolsection {
+        width: 990px;
+        height: 435px;
+        grid-area: 2/2/3/3;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .metrica {
+        min-width: 270px;
+        max-height: 435px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #FAFAFA;
+      }
+      .met {
+        width: 187;
+        height: 52px;
+        padding: 15px 45px;
+        border-radius: 100px;
+        font-size: 17px;
+        font-family: Georgia;
+        font-style: normal;
+        line-height: 22px;
+        border: 2px solid #F1CDB3;
+        background-color: #FAFAFA;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="container">
+      <div class="content">
+        <div class="heading">
+          <h1>Our friends who
+            <br> looking for a house
+          </h1>
+        </div>
+        <div class="clicleft">
+          <div class="circle">
+            <button class="but left">1</button>
+          </div>
+        </div>
+        <div class="clicright">
+          <div class="circle">
+            <button class="but right">2</button>
+        </div>
+        </div>
+        <div class="clicbottom">
+          <div>
+            <button class="button">Get to know the rest</button>
+          </div>
+        </div>        
+      <div class="scrolsection">
+            <section class="metrica katrine">
+              <div class="img">
+                <img src="./assets/katrine.png" alt="katrine" />
+                <h2>Katrine</h2>
+                <div class="clic">
+                  <button class="met">Learn more</button>
+                </div>
+              </div>
+            </section>
+            <section class="metrica jennifer">
+              <div class="img">
+                <img src="./assets/jennifer.png" alt="jennifer" />
+                <h2>Jennifer</h2>
+                <div class="clic">
+                  <button class="met">Learn more</button>
+                </div>
+              </div>
+            </section>
+            <section class="metrica woody">
+              <div class="img">
+                <img src="./assets/woody.png" alt="woody" />
+                <h2>Woody</h2>
+                <div class="clic">
+                  <button class="met">Learn more</button>
+                </div>
+              </div>
+            </section>
+      </div>
+    </aside>
+  </body>
+</html>
