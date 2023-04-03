@@ -1,0 +1,5 @@
+@media (max-width:1220px) {
+    .scrolsection {
+        grid-template-columns: repeat(2, 270px);
+    } 
+}
