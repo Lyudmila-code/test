@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       @media (max-width: 1024px) {
         .scrolsection {
-          border: 1px solid red;
+          min-width: 580px;
         }
       }
       @media (max-width: 767px) {
         .scrolsection {
-          border: 1px solid blue;
+          min-width: 270px;
+        }
+        .clicleft {
+          grid-area: 3/2/4/3;
+          padding-right: 180px;
+        }
+        .clicright {
+          grid-area: 3/2/4/3;
+          padding-left: 180px;
+        }
+        h2 {
+          min-width: 300px;
+          font-size: 25px;
+          line-height: 32px;
+          text-align: center;
         }
       }
       .container {
@@ -26,13 +43,12 @@
         width: 100%;
         background-color: #f6f6f6;
         border: 1px solid blueviolet;
-
         min-height: 877px;
         margin: 0 auto;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: minmax(94px, 145px) 1fr minmax(94px, 145px);
-        grid-template-rows: 230px 1fr 212px;
+        grid-template-columns: 12% 1fr 12%;
+        grid-template-rows: 230px 1fr 60px 212px;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -42,18 +58,22 @@
         height: 440px;
         box-sizing: border-box;
         display: grid;
+        grid-area: 2/2/3/3;
         justify-content: center;
         justify-content: space-between;
         background-color: aquamarine;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 270px));
+        grid-template-columns: repeat(auto-fill, 270px);
         grid-template-rows: 1fr;
         grid-auto-rows: 0;
         overflow-y: hidden;
         row-gap: 0;
-        column-gap: 15px;
+        column-gap: 40px;
+      }
+      .mobilescrol {
+        grid-area: 3/2/4/3;
       }
       .metrica {
-        width: 270px;
+        min-width: 270px;
         height: 435px;
         text-align: center;
         background-color: #fafafa;
@@ -69,13 +89,6 @@
         font-weight: 400;
         font-size: 35px;
         line-height: 22px;
-        letter-spacing: 0.06em;
-      }
-      .clicleft {
-        background-color: aquamarine;
-      }
-      .clicright {
-        background-color: aquamarine;
       }
       .clicbottom {
         grid-column: span 3;
@@ -243,6 +256,7 @@
             <img src="./assets/Arrow-l.png" alt="Arrow" />
           </button>
         </div>
+        <div class="mobilescrol"></div>
         <div class="clicbottom">
           <a class="button" href="#" target="_blank">Get to know the rest</a>
         </div>
