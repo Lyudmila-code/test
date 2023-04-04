@@ -17,15 +17,16 @@
         }
       }
       .container {
-        width: 100%;
+        max-width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
         border: 1px solid red;
       }
       .content {
+        width: 100%;
         background-color: #f6f6f6;
         border: 1px solid blueviolet;
-        max-width: 1280px;
+
         min-height: 877px;
         margin: 0 auto;
         box-sizing: border-box;
@@ -39,14 +40,17 @@
       .scrolsection {
         width: 100%;
         height: 440px;
-        grid-area: 2/2/3/3;
         box-sizing: border-box;
         display: grid;
         justify-content: center;
         justify-content: space-between;
         background-color: aquamarine;
-        grid-template-columns: repeat(3, 270px);
-        column-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 270px));
+        grid-template-rows: 1fr;
+        grid-auto-rows: 0;
+        overflow-y: hidden;
+        row-gap: 0;
+        column-gap: 15px;
       }
       .metrica {
         width: 270px;
@@ -58,7 +62,7 @@
         width: 100%;
         object-fit: cover;
       }
-      h1 {
+      h2 {
         grid-area: 1/1/2/4;
         font-family: Georgia;
         font-style: normal;
@@ -67,19 +71,14 @@
         line-height: 22px;
         letter-spacing: 0.06em;
       }
-      .heading {
-        grid-area: 1/1/2/4;
-      }
       .clicleft {
-        grid-area: 2/1/3/2;
         background-color: aquamarine;
       }
       .clicright {
-        grid-area: 2/3/3/4;
         background-color: aquamarine;
       }
       .clicbottom {
-        grid-area: 3/1/4/4;
+        grid-column: span 3;
       }
       .button {
         width: 261px;
@@ -131,33 +130,15 @@
   <body>
     <section class="container">
       <div class="content">
-        <div class="heading">
-          <h1>
-            Our friends who <br />
-            <br />
-            looking for a house
-          </h1>
+        <h2>
+          Our friends who <br />
+          <br />looking for a house
+        </h2>
+        <div class="clicleft circle">
+          <button class="but left">
+            <img src="./assets/Arrow-r.png" alt="Arrow" />
+          </button>
         </div>
-        <div class="clicleft">
-          <div class="circle">
-            <button class="but left">
-              <img src="./assets/Arrow-r.png" alt="Arrow" />
-            </button>
-          </div>
-        </div>
-        <div class="clicright">
-          <div class="circle">
-            <button class="but right">
-              <img src="./assets/Arrow-l.png" alt="Arrow" />
-            </button>
-          </div>
-        </div>
-        <div class="clicbottom">
-          <div>
-            <a class="button" href="#" target="_blank">Get to know the rest</a>
-          </div>
-        </div>
-
         <div class="scrolsection">
           <section class="metrica katrine">
             <div class="katrine">
@@ -184,6 +165,86 @@
               </div>
             </div>
           </section>
+          <section class="metrica sophia">
+            <div class="img">
+              <img src="./assets/Sophia.png" alt="sophia" />
+              <h2>Sophia</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica timmy">
+            <div class="img">
+              <img src="./assets/timmy.png" alt="Timmy" />
+              <h2>Timmy</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica charly">
+            <div class="img">
+              <img src="./assets/charly.png" alt="Charly" />
+              <h2>Charly</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica scarlett">
+            <div class="img">
+              <img src="./assets/scarlet.png" alt="Scarlett" />
+              <h2>Scarlett</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica Freddie">
+            <div class="img">
+              <img src="./assets/Freddie.png" alt="Freddie" />
+              <h2>Freddie</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica katrine">
+            <div class="img">
+              <img src="./assets/katrine.png" alt="katrine" />
+              <h2>Katrine</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica jennifer">
+            <div class="img">
+              <img src="./assets/jennifer.png" alt="jennifer" />
+              <h2>Jennifer</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+          <section class="metrica woody">
+            <div class="img">
+              <img src="./assets/woody.png" alt="woody" />
+              <h2>Woody</h2>
+              <div class="clic">
+                <a class="button met" href="#" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="clicright circle">
+          <button class="but right">
+            <img src="./assets/Arrow-l.png" alt="Arrow" />
+          </button>
+        </div>
+        <div class="clicbottom">
+          <a class="button" href="#" target="_blank">Get to know the rest</a>
         </div>
       </div>
     </section>
